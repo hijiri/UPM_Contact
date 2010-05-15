@@ -1,0 +1,25 @@
+<form id="contact-form" action="<?php echo $item['cd']?>/modules/contact/index.php" method="post">
+<fieldset>
+<legend>Contact Form</legend>
+<p>
+<input type="text" id="name" name="name" value="<?php echo $item['contact']['name']?>" onfocus="if (value == '<?php echo $lang['contact']['default_name']?>') { value = ''; }" onblur="if (value == '') { value = '<?php echo $lang['contact']['default_name']?>'; }" />
+<label for="name" id="name-label">Name</label>
+</p>
+<p>
+<input type="text" id="email" name="email" value="<?php echo $item['contact']['email']?>" onfocus="if (value == '<?php echo $lang['contact']['default_email']?>') { value = ''; }" onblur="if (value == '') { value = '<?php echo $lang['contact']['default_email']?>'; }" />
+<label for="email" id="email-label">E-Mail</label>
+</p>
+<p>
+<input type="text" id="subject" name="subject" size="30" value="<?php echo $item['contact']['subject']?>" onfocus="if (value == '<?php echo $lang['contact']['default_subject']?>') { value = ''; }" onblur="if (value == '') { value = '<?php echo $lang['contact']['default_subject']?>'; }" />
+<label for="subject" id="subject-label">Subject</label>
+</p>
+<p>
+<label for="message" id="message-label">Message</label>
+<textarea rows="10" cols="50" id="message" name="message" onfocus="if (value == '<?php echo $lang['contact']['default_message']?>') { value = ''; }" onblur="if (value == '') { value = '<?php echo $lang['contact']['default_message']?>'; }"><?php echo $item['contact']['message']?></textarea>
+</p>
+<p>
+<input type="submit" name="preview" value="<?php echo $lang['contact']['preview']?>" />
+</p>
+</fieldset>
+</form>
+<?php echo $module['UPM']['contact']['powerd_by']?>

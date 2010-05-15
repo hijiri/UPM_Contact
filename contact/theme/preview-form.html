@@ -1,0 +1,29 @@
+<form id="contact-form" action="<?php echo $item['cd']?>/modules/contact/index.php" method="post">
+<fieldset>
+<legend>Contact Preview Form</legend>
+<p>
+<label for="name">Name</label>
+<input type="hidden" id="name" name="name" value="<?php echo $item['contact']['name']?>" /><br />
+<?php echo $item['contact']['name']?>
+</p>
+<p>
+<label for="email">E-Mail</label>
+<input type="hidden" id="email" name="email" value="<?php echo $item['contact']['email']?>" /><br />
+<span class="mail-address"><?php echo $item['contact']['email']?></span>
+</p>
+<p>
+<label for="subject">Subject</label>
+<input type="hidden" id="subject" name="subject" value="<?php echo $item['contact']['subject']?>" /><br />
+<?php echo $item['contact']['subject']?>
+</p>
+<p>
+<label for="message">Message</label>
+<input type="hidden" id="message" name="message" value="<?php echo $item['contact']['message']?>" />
+</p>
+<pre class="view"><?php echo $item['contact']['message']?></pre>
+<p>
+<input type="submit" name="send" value="<?php echo $lang['contact']['send']?>" />
+</p>
+</fieldset>
+</form>
+<?php echo $module['UPM']['contact']['powerd_by']?>
