@@ -11,7 +11,7 @@
  * @link         http://tkns.homelinux.net/
  * @license      http://www.opensource.org/licenses/bsd-license.php  New BSD License
  * @since        2010.05.10
- * @version      10.5.13
+ * @version      11.1.13
  */
 
 // SETTING BEGIN
