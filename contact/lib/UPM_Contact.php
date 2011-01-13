@@ -63,7 +63,7 @@ class UPM_Contact extends Loggix_Module
      * @param  string $subject
      * @return string
      */
-    public function getMaiSubject($subject)
+    public function getMailSubject($subject)
     {
         return mb_encode_mimeheader(html_entity_decode($subject), 'UTF-8', 'B');
     }

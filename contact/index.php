@@ -99,7 +99,7 @@ try {
                 ini_set("mbstring.internal_encoding","UTF-8");
             
                 // Success
-                if (mail($sendto, $app->getMaiSubject($subject), $app->getMailBody($name, $email, $message), $app->getMailHeader($name, $email), "-f $sendto")) {
+                if (mail($sendto, $app->getMailSubject($subject), $app->getMailBody($name, $email, $message), $app->getMailHeader($name, $email), "-f $sendto")) {
                     $contactTitle = 'Success!';
                     $content      = $app->showInformation($contactTitle, 'info', $lang['contact']['send_success']);
                 // Failure
