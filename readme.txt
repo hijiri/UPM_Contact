@@ -11,7 +11,7 @@
  * @link         http://tkns.homelinux.net/
  * @license      http://www.opensource.org/licenses/bsd-license.php  New BSD License
  * @since        2010.05.10
- * @version      11.1.13
+ * @version      11.5.23
  */
 
 ●コンタクトモジュール
@@ -42,5 +42,6 @@ UTF-8メールを送信する為、受信するクライアントソフトによ
 作者多忙の為サポート出来ません。意見/感想はContactからご連絡ください。
 
 ■更新履歴
+2011-05-23:PHP5.3.0でエラーが出ていた箇所を修正
 2011-01-13:タイプミス修正
 2010-05-13:公開

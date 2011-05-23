@@ -61,7 +61,7 @@ try {
             $contactTitle = 'Not modified E-Mail';
             $content      = $app->showInformation($contactTitle, 'warning', $lang['contact']['error_not_modified_email'])
                           . $app->showContactForm('post', $name, $email, $subject, $message);
-        } elseif (($email != '') && (!ereg('^[-!#$%&\'*+\\./0-9=?A-Z^_`a-z{|}~]+'.'@'.'[-!#$%&\'*+\\/0-9=?A-Z^_`a-z{|}~]+\.'.'[-!#$%&\'*+\\./0-9=?A-Z^_`a-z{|}~]+$', $email))) {
+        } elseif (($email != '') && (!mb_ereg('^[-!#$%&\'*+\\./0-9=?A-Z^_`a-z{|}~]+'.'@'.'[-!#$%&\'*+\\/0-9=?A-Z^_`a-z{|}~]+\.'.'[-!#$%&\'*+\\./0-9=?A-Z^_`a-z{|}~]+$', $email))) {
             $contactTitle = 'Invalid E-Mail Address';
             $content      = $app->showInformation($contactTitle, 'warning', $lang['contact']['error_invalid_email'])
                           . $app->showContactForm('post', $name, $email, $subject, $message);
